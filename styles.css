@@ -8,14 +8,15 @@
 }
 *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
 html, body { min-height: 100dvh; font-family: var(--font-sans); background: #fff; color: var(--text-muted); -webkit-font-smoothing: antialiased; }
-.split-viewport { width: 100%; min-height: 100dvh; display: grid; grid-template-columns: 1fr 1fr; background: #fff; }
-.left-stage { display: flex; justify-content: center; align-items: center; min-height: 100dvh; }
+body { display: flex; flex-direction: column; }
+.split-viewport { width: 100%; flex: 1; display: grid; grid-template-columns: 1fr 1fr; background: #fff; min-height: 0; }
+.left-stage { display: flex; justify-content: center; align-items: center; }
 .container { width: 100%; max-width: 520px; margin: 0 auto; display: flex; flex-direction: column; justify-content: center; padding: 1.5rem 1.75rem 2rem; }
 .site-header { margin-bottom: 2.25rem; }
 .name { font-size: clamp(1.7rem, 4.5vw, 2.3rem); font-weight: 600; letter-spacing: -0.03em; color: var(--text-dark); line-height: 1.2; }
-.right-stage { display: flex; justify-content: center; align-items: center; min-height: 100dvh; height: 100vh; padding: 2rem; overflow: hidden; background: #fff; }
-.avatar-wrapper { position: relative; height: 78vh; width: 100%; max-width: 480px; }
-.avatar-img { position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); max-height: 78vh; max-width: 100%; object-fit: contain; mix-blend-mode: multiply; opacity: 0; transition: opacity .45s ease; pointer-events: none; }
+.right-stage { display: flex; justify-content: center; align-items: center; padding: 2rem; overflow: hidden; background: #fff; min-height: 0; }
+.avatar-wrapper { position: relative; height: 100%; width: 100%; max-width: 480px; }
+.avatar-img { position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); max-height: 100%; max-width: 100%; object-fit: contain; mix-blend-mode: multiply; opacity: 0; transition: opacity .45s ease; pointer-events: none; }
 .avatar-img.is-visible { opacity: 1; }
 .accordion { display: flex; flex-direction: column; gap: .15rem; width: 100%; }
 .acc-item { border-bottom: 1px solid var(--border-light); }
