@@ -48,11 +48,10 @@ body { display: flex; flex-direction: column; }
 .passions-list { list-style: none; }
 .passions-list li { display: flex; justify-content: space-between; font-size: 1rem; color: var(--text-body); padding: .45rem 0; border-bottom: 1px solid var(--border-subtle); }
 .passions-list li:last-child { border-bottom: none; }
-.contact { width: 100%; display: flex; justify-content: center; align-items: center; gap: .75rem; font-size: .9rem; color: var(--text-muted); padding: 1.25rem 0 .35rem; background: #fff; flex-shrink: 0; }
+.contact { width: 100%; display: flex; justify-content: center; align-items: center; gap: .75rem; font-size: .9rem; color: var(--text-muted); padding: 1.25rem 0 1.75rem; background: #fff; flex-shrink: 0; }
 .contact a { color: var(--text-muted); text-decoration: none; }
 .contact a:hover { color: var(--text-dark); }
 .contact .sep { color: #ddd; }
-.privacy-note { text-align: center; font-size: .75rem; color: #999; padding: 0 1rem 1.4rem; background: #fff; flex-shrink: 0; }
 @media (max-width: 960px) {
   .split-viewport { grid-template-columns: 1fr; }
   .left-stage { align-items: flex-start; }
