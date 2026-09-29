@@ -52,22 +52,22 @@ body { display: flex; flex-direction: column; }
 .contact a { color: var(--text-muted); text-decoration: none; }
 .contact a:hover { color: var(--text-dark); }
 .contact .sep { color: #ddd; }
-a.labs-egg { text-decoration: none; color: inherit; }
-.labs-text {
-  background-image: linear-gradient(90deg, #6b8cff, #c084fc, #fb7185, #f59e0b, #34d399, #6b8cff);
-  background-size: 280% 100%;
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-  animation: labs-shift 9s linear infinite;
+.labs-btn {
+  display: block;
+  width: fit-content;
+  margin: 1.75rem auto 0;
+  padding: 0.55rem 1.15rem;
+  border: 1px solid #111;
+  border-radius: 999px;
+  color: #111;
+  text-decoration: none;
+  font-size: 0.82rem;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  background: #fff;
 }
-@keyframes labs-shift {
-  to { background-position: 280% 0; }
-}
-@media (prefers-reduced-motion: reduce) {
-  .labs-text { animation: none; background-image: none; color: var(--text-light); }
-  a.labs-egg:hover .labs-text { color: var(--text-dark); }
-}
+.labs-btn:hover { background: #111; color: #fff; }
 @media (max-width: 960px) {
   .split-viewport { grid-template-columns: 1fr; }
   .left-stage { align-items: center; min-height: 100%; }
