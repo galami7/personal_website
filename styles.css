@@ -52,9 +52,23 @@ body { display: flex; flex-direction: column; }
 .contact a { color: var(--text-muted); text-decoration: none; }
 .contact a:hover { color: var(--text-dark); }
 .contact .sep { color: #ddd; }
+.labs-link {
+  display: inline-flex;
+  align-items: center;
+  margin-top: 1.75rem;
+  color: var(--text-dark);
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-weight: 500;
+  letter-spacing: -0.01em;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 2px;
+  width: fit-content;
+}
+.labs-link:hover { border-bottom-color: var(--text-dark); }
 @media (max-width: 960px) {
   .split-viewport { grid-template-columns: 1fr; }
-  .left-stage { align-items: flex-start; }
+  .left-stage { align-items: center; min-height: 100%; }
   .container { padding: 1.25rem; }
   .right-stage { display: none; }
 }
